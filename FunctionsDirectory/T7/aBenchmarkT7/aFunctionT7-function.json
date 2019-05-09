@@ -1,0 +1,19 @@
+{
+    "disabled": false,
+    "bindings": [
+        {
+            "type": "httpTrigger",
+            "direction": "in",
+            "name": "req",
+            "route": "aBenchmarkT7/aFunctionT7",
+            "authLevel": "anonymous"
+        },
+        {
+            "type": "http",
+            "direction": "out",
+            "name": "res"
+        }
+    ],
+    "entryPoint": "aFunctionT7",
+    "scriptFile": "handler.js"
+}
