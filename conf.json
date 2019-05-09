@@ -1,0 +1,407 @@
+{
+  "jMeterPath": "",
+  "jMeterTemplates": {
+    "T1": "JMeterTemplates/T1/T1.jmx",
+    "T2": "JMeterTemplates/T2/T2.jmx",
+    "T3_0": "JMeterTemplates/T3/T3_0.jmx",
+    "T3_1": "JMeterTemplates/T3/T3_1.jmx",
+    "T4": "JMeterTemplates/T4/T4.jmx",
+    "T5": "JMeterTemplates/T5/T5.jmx",
+    "T6": "JMeterTemplates/T6/T6.jmx",
+    "T7": "JMeterTemplates/T7/T7.jmx"
+  },
+  "jMeterResultsPath": {
+    "T1": "ResultsDirectory/JMeterResults/T1",
+    "T2": "ResultsDirectory/JMeterResults/T2",
+    "T3": "ResultsDirectory/JMeterResults/T3",
+    "T4": "ResultsDirectory/JMeterResults/T4",
+    "T5": "ResultsDirectory/JMeterResults/T5",
+    "T6": "ResultsDirectory/JMeterResults/T6",
+    "T7": "ResultsDirectory/JMeterResults/T7"
+  },
+  "benchmarkResultsPath": {
+    "T1": "ResultsDirectory/BenchmarkResults/T1",
+    "T2": "ResultsDirectory/BenchmarkResults/T2",
+    "T3": "ResultsDirectory/BenchmarkResults/T3",
+    "T4": "ResultsDirectory/BenchmarkResults/T4",
+    "T5": "ResultsDirectory/BenchmarkResults/T5",
+    "T6": "ResultsDirectory/BenchmarkResults/T6",
+    "T7": "ResultsDirectory/BenchmarkResults/T7"
+  },
+  "googleFunctions": {
+    "T1": {
+      "function": "gFunctionT1",
+      "service": "gbenchmarkt1"
+    },
+    "T2": {
+      "function": "gFunctionT2",
+      "service": "gbenchmarkt2"
+    },
+    "T3": {
+      "function": "gFunctionT3",
+      "service": "gbenchmarkt3"
+    },
+    "T4": {
+      "function": "gFunctionT4",
+      "service": "gbenchmarkt4"
+    },
+    "T6": {
+      "128": {
+        "function": "gFunctionT6M128",
+        "service": "gbenchmarkt6m128"
+      },
+      "256": {
+        "function": "gFunctionT6M256",
+        "service": "gbenchmarkt6m256"
+      },
+      "512": {
+        "function": "gFunctionT6M512",
+        "service": "gbenchmarkt6m512"
+      },
+      "1024": {
+        "function": "gFunctionT6M1024",
+        "service": "gbenchmarkt6m1024"
+      },
+      "2048": {
+        "function": "gFunctionT6M2048",
+        "service": "gbenchmarkt6m2048"
+      }
+    },
+    "T7": {
+      "function": "gFunctionT7",
+      "service": "gbenchmarkt7"
+    }
+  },
+  "functionsURL": {
+    "ow": {
+      "T1": "",
+      "T2": "",
+      "T3": "",
+      "T4": "",
+      "T5": {
+        "NodeJs": "",
+        "Python": "",
+        "Swift": "",
+        "Ruby": "",
+        "Php": ""
+      },
+      "T6": {
+        "512": ""
+        },
+      "T7": ""
+    },
+    "azure": {
+      "T1": "",
+      "T2": "",
+      "T3": "",
+      "T4": "",
+      "T7": ""
+    },
+    "google": {
+      "T1": "",
+      "T2": "",
+      "T3": "",
+      "T4": "",
+      "T6": {
+        "128": "",
+        "256": "",
+        "512": "",
+        "1024": "",
+        "2048": ""
+      },
+      "T7": ""
+    },
+    "aws": {
+      "T1": "",
+      "T2": "",
+      "T3": "",
+      "T4": "",
+      "T5": {
+        "NodeJs": "",
+        "Python": "",
+        "Go": "",
+        "Java": ""
+      },
+      "T6": {
+        "128": "",
+        "256": "",
+        "512": "",
+        "1024": "",
+        "2048": ""
+      },
+      "T7": ""
+    }
+  },
+  "functionsPath": {
+    "ow": {
+      "T1": "FunctionsDirectory/T1/owBenchmarkT1",
+      "T2": "FunctionsDirectory/T2/owBenchmarkT2",
+      "T3": "FunctionsDirectory/T3/owBenchmarkT3",
+      "T4": "FunctionsDirectory/T4/owBenchmarkT4",
+      "T5": {
+        "NodeJs": "FunctionsDirectory/T5/owBenchmarkT5NodeJs",
+        "Python": "FunctionsDirectory/T5/owBenchmarkT5Python",
+        "Swift": "FunctionsDirectory/T5/owBenchmarkT5Swift",
+        "Ruby": "FunctionsDirectory/T5/owBenchmarkT5Ruby",
+        "Php": "FunctionsDirectory/T5/owBenchmarkT5Php"
+      },
+      "T6": {
+        "128": "FunctionsDirectory/T6/owBenchmarkT6M128",
+        "256": "FunctionsDirectory/T6/owBenchmarkT6M256",
+        "384": "FunctionsDirectory/T6/owBenchmarkT6M384",
+        "512": "FunctionsDirectory/T6/owBenchmarkT6M512"
+      },
+      "T7": "FunctionsDirectory/T7/owBenchmarkT7"
+    },
+    "azure": {
+      "T1": "FunctionsDirectory/T1/aBenchmarkT1",
+      "T2": "FunctionsDirectory/T2/aBenchmarkT2",
+      "T3": "FunctionsDirectory/T3/aBenchmarkT3",
+      "T4": "FunctionsDirectory/T4/aBenchmarkT4",
+      "T7": "FunctionsDirectory/T7/aBenchmarkT7"
+    },
+    "google": {
+      "T1": "FunctionsDirectory/T1/gBenchmarkT1",
+      "T2": "FunctionsDirectory/T2/gBenchmarkT2",
+      "T3": "FunctionsDirectory/T3/gBenchmarkT3",
+      "T4": "FunctionsDirectory/T4/gBenchmarkT4",
+      "T6": {
+        "128": "FunctionsDirectory/T6/gBenchmarkT6M128",
+        "256": "FunctionsDirectory/T6/gBenchmarkT6M256",
+        "512": "FunctionsDirectory/T6/gBenchmarkT6M512",
+        "1024": "FunctionsDirectory/T6/gBenchmarkT6M1024",
+        "2048": "FunctionsDirectory/T6/gBenchmarkT6M2048"
+      },
+      "T7": "FunctionsDirectory/T7/gBenchmarkT7"
+    },
+    "aws": {
+      "T1": "FunctionsDirectory/T1/awsBenchmarkT1",
+      "T2": "FunctionsDirectory/T2/awsBenchmarkT2",
+      "T3": "FunctionsDirectory/T3/awsBenchmarkT3",
+      "T4": "FunctionsDirectory/T4/awsBenchmarkT4",
+      "T5": {
+        "NodeJs": "FunctionsDirectory/T5/awsBenchmarkT5NodeJs",
+        "Python": "FunctionsDirectory/T5/awsBenchmarkT5Python",
+        "Go": "FunctionsDirectory/T5/awsBenchmarkT5Go",
+        "Java": "FunctionsDirectory/T5/awsBenchmarkT5Java"
+      },
+      "T6": {
+        "128": "FunctionsDirectory/T6/awsBenchmarkT6M128",
+        "256": "FunctionsDirectory/T6/awsBenchmarkT6M256",
+        "512": "FunctionsDirectory/T6/awsBenchmarkT6M512",
+        "1024": "FunctionsDirectory/T6/awsBenchmarkT6M1024",
+        "2048": "FunctionsDirectory/T6/awsBenchmarkT6M2048"
+      },
+      "T7": "FunctionsDirectory/T7/awsBenchmarkT7"
+    }
+  },
+  "azureFunctions": {
+    "T1": {
+      "function": "aFunctionT1",
+      "service": "aBenchmarkT1"
+    },
+    "T2": {
+      "function": "aFunctionT2",
+      "service": "aBenchmarkT2"
+    },
+    "T3": {
+      "function": "aFunctionT3",
+      "service": "aBenchmarkT3"
+    },
+    "T4": {
+      "function": "aFunctionT4",
+      "service": "aBenchmarkT4"
+    },
+    "T7": {
+      "function": "aFunctionT7",
+      "service": "aBenchmarkT7"
+    }
+  },
+  "owFunctions": {
+    "T1": {
+      "function": "owFunctionT1",
+      "service": "owBenchmarkT1"
+    },
+    "T2": {
+      "function": "owFunctionT2",
+      "service": "owBenchmarkT2"
+    },
+    "T3": {
+      "function": "owFunctionT3",
+      "service": "owBenchmarkT3"
+    },
+    "T4": {
+      "function": "owFunctionT4",
+      "service": "owBenchmarkT4"
+    },
+    "T5": {
+      "NodeJs": {
+        "function": "owFunctionT5NodeJs",
+        "service": "owBenchmarkT5NodeJs"
+      },
+      "Python": {
+        "function": "owFunctionT5Python",
+        "service": "owBenchmarkT5Python"
+      },
+      "Swift": {
+        "function": "owFunctionT5Swift",
+        "service": "owBenchmarkT5Swift"
+      },
+      "Ruby": {
+        "function": "owFunctionT5Ruby",
+        "service": "owBenchmarkT5Ruby"
+      },
+      "Php": {
+        "function": "owFunctionT5Php",
+        "service": "owBenchmarkT5Php"
+      }
+    },
+    "T6": {
+      "128": {
+        "function": "owFunctionT6M128",
+        "service": "owBenchmarkT6M128"
+      },
+      "256": {
+        "function": "owFunctionT6M256",
+        "service": "owBenchmarkT6M256"
+      },
+      "384": {
+        "function": "owFunctionT6M384",
+        "service": "owBenchmarkT6M384"
+      },
+      "512": {
+        "function": "owFunctionT6M512",
+        "service": "owBenchmarkT6M512"
+      }
+    },
+    "T7": {
+      "function": "owFunctionT7",
+      "service": "owBenchmarkT7"
+    }
+  },
+  "awsFunctions": {
+    "T1": {
+      "function": "awsFunctionT1",
+      "service": "awsBenchmarkT1"
+    },
+    "T2": {
+      "function": "awsFunctionT2",
+      "service": "awsBenchmarkT2"
+    },
+    "T3": {
+      "function": "awsFunctionT3",
+      "service": "awsBenchmarkT3"
+    },
+    "T4": {
+      "function": "awsFunctionT4",
+      "service": "awsBenchmarkT4"
+    },
+    "T5": {
+      "NodeJs": {
+        "function": "awsFunctionT5NodeJs",
+        "service": "awsBenchmarkT5NodeJs"
+      },
+      "Python": {
+        "function": "awsFunctionT5Python",
+        "service": "awsBenchmarkT5Python"
+      },
+      "Go": {
+        "function": "awsFunctionT5Go",
+        "service": "awsBenchmarkT5Go"
+      },
+      "Java": {
+        "function": "awsFunctionT5Java",
+        "service": "awsBenchmarkT5Java"
+      }
+    },
+    "T6": {
+      "128": {
+        "function": "awsFunctionT6M128",
+        "service": "awsBenchmarkT6M128"
+      },
+      "256": {
+        "function": "awsFunctionT6M256",
+        "service": "awsBenchmarkT6M256"
+      },
+      "512": {
+        "function": "awsFunctionT6M512",
+        "service": "awsBenchmarkT6M512"
+      },
+      "1024": {
+        "function": "awsFunctionT6M1024",
+        "service": "awsBenchmarkT6M1024"
+      },
+      "2048": {
+        "function": "awsFunctionT6M2048",
+        "service": "awsBenchmarkT6M2048"
+      }
+    },
+    "T7": {
+      "function": "awsFunctionT7",
+      "service": "awsBenchmarkT7"
+    }
+  },
+  "providers": {
+    "T1": [
+      "ow",
+      "azure",
+      "google",
+      "aws"
+    ],
+    "T2": [
+      "ow",
+      "azure",
+      "google",
+      "aws"
+    ],
+    "T3": [
+      "ow",
+      "azure",
+      "google",
+      "aws"
+    ],
+    "T4": [
+      "ow",
+      "azure",
+      "google",
+      "aws"
+    ],
+    "T5": [
+      "ow",
+      "aws"
+    ],
+    "T6": [
+      "ow",
+      "aws",
+      "google"
+    ],
+    "T7": [
+      "ow",
+      "azure",
+      "google",
+      "aws"
+    ]
+  },
+  "T4PayloadSize": [
+    0,
+    32,
+    64,
+    96,
+    128,
+    160,
+    192,
+    224,
+    256
+  ],
+  "T7Weights": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40
+  ]
+}
