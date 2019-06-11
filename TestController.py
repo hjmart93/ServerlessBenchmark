@@ -33,6 +33,8 @@ def run_overhead_test(args):
     test_number = args[1]
     execution_time = args[2]
 
+
+
     print('Getting JMeter template...')
     template = get_template(test_number)
 
@@ -55,6 +57,7 @@ def run_overhead_test(args):
 
                 if function_url is None or function_url =="":
                     print("No function deployed for test T" + test_number + " on " + serverless_provider + " provider")
+                    return None
                 else:
                     update_t1_template(function_url, execution_time, template, test_number)
                     file_name = get_output_file_name(ts, serverless_provider)
@@ -82,6 +85,7 @@ def run_overhead_test(args):
 
             if function_url is None or function_url == "":
                 print("No function deployed for test T" + test_number + " on " + serverless_provider + " provider")
+                return None
             else:
                 update_t1_template(function_url, execution_time, template, test_number)
                 file_name = get_output_file_name(ts, serverless_provider)
@@ -103,6 +107,7 @@ def run_concurrency_test(args):
     max_concurrency = int(args[3])
     concurrency_step = int(args[4])
     execution_time = args[5]
+
 
     print('Getting JMeter template...')
     template = get_template(test_number)
@@ -126,6 +131,7 @@ def run_concurrency_test(args):
 
                 if function_url is None or function_url =="":
                     print("No function deployed for test T" + test_number + " on " + serverless_provider + " provider")
+                    return None
                 else:
                     update_t2_template(function_url, execution_time, template, test_number, num_threads)
                     file_name = get_output_file_name(ts, serverless_provider)
@@ -162,6 +168,7 @@ def run_concurrency_test(args):
 
                 if function_url is None or function_url =="":
                     print("No function for test T" + test_number + " on " + serverless_provider + " provider")
+                    return None
                 else:
                     update_t2_template(function_url, execution_time, template, test_number, num_threads)
                     file_name = get_output_file_name(ts, serverless_provider)
@@ -221,6 +228,7 @@ def run_container_reuse_test(args):
 
             if function_url is None or function_url == "":
                 print("No function for test T" + test_number + " on " + serverless_provider + " provider")
+                return None
 
             else:
                 update_t1_template(function_url, execution_time, template, test_number + '_0')
@@ -284,6 +292,7 @@ def run_container_reuse_test(args):
 
             if function_url is None or function_url == "":
                 print("No function for test T" + test_number + " on " + serverless_provider + " provider")
+                return None
 
             else:
                 update_t1_template(function_url, execution_time, template, test_number+'_0')
@@ -367,6 +376,7 @@ def run_payload_test(args):
                 function_url = get_function_url(serverless_provider, test_number)
                 if function_url is None or function_url == "":
                     print("No function for test T" + test_number + " on " + serverless_provider + " provider")
+                    return None
 
                 else:
                     function_url = function_url + '?n='+str(pay_size)
@@ -403,6 +413,7 @@ def run_payload_test(args):
                 function_url = get_function_url(serverless_provider, test_number)
                 if function_url is None or function_url == "":
                     print("No function for test T" + test_number + " on " + serverless_provider + " provider")
+                    return None
 
                 else:
                     function_url = function_url + '?n='+str(pay_size)
@@ -458,6 +469,7 @@ def run_overhead_languages_test(args):
             for prog_lang, url in functions.items():
                 if url is None or url == "":
                     print("No function in " + prog_lang + " for test T" + test_number + " on " + serverless_provider + " provider")
+                    return None
 
                 else:
 
@@ -512,6 +524,8 @@ def run_memory_test(args):
             for func_mem, url in functions.items():
                 if url is None or url == "":
                     print("No function with " + func_mem + "Mb of memory for test T" + test_number + " on " + serverless_provider + " provider")
+                    return None
+
                 else:
                     update_t1_template(url, execution_time, template, test_number)
                     file_name = get_output_file_name(ts, serverless_provider)
@@ -562,6 +576,8 @@ def run_weight_test(args):
                 function_url = get_function_url(serverless_provider, test_number)
                 if function_url is None or function_url == "":
                     print("No function for test T" + test_number + " on " + serverless_provider + " provider")
+                    return None
+
                 else:
                     function_url = function_url + '?n='+str(weight)
                     update_t1_template(function_url, execution_time, template,test_number)
@@ -597,6 +613,8 @@ def run_weight_test(args):
                 function_url = get_function_url(serverless_provider, test_number)
                 if function_url is None or function_url == "":
                     print("No function for test T" + test_number + " on " + serverless_provider + " provider")
+                    return None
+
                 else:
                     function_url = function_url + '?n='+str(weight)
                     update_t1_template(function_url, execution_time, template,test_number)
